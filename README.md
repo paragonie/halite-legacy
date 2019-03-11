@@ -16,7 +16,7 @@ into your application in order to migrate data to the newest version.
 Use Composer.
 
 ```
-composer require paragonie/halite:^4
+composer require paragonie/halite-legacy
 ```
 
 ### Migrating Code
@@ -49,3 +49,9 @@ $storeMe = Crypto::encrypt(
     $encKey
 );
 ```
+## Support Contracts
+
+If your company uses this library in their products or services, you may be
+interested in [purchasing a support contract from Paragon Initiative Enterprises](https://paragonie.com/enterprise).
+
+Unpaid support will not be provided for `halite-legacy`.
