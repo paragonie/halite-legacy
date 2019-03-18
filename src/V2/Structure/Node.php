@@ -2,11 +2,11 @@
 declare(strict_types=1);
 namespace ParagonIE\HaliteLegacy\V2\Structure;
 
-use \ParagonIE\Halite\Util;
+use \ParagonIE\HaliteLegacy\V2\Util;
 
 /**
  * Class Node
- * @package ParagonIE\Halite\Structure
+ * @package ParagonIE\HaliteLegacy\V2\Structure
  */
 class Node
 {

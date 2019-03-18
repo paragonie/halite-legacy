@@ -1,9 +1,9 @@
 <?php
 namespace ParagonIE\HaliteLegacy\V1;
 
-use ParagonIE\Halite\Asymmetric\SignatureSecretKey;
-use ParagonIE\Halite\Asymmetric\SignaturePublicKey;
-use ParagonIE\Halite\Alerts as CryptoException;
+use ParagonIE\HaliteLegacy\V1\Asymmetric\SignatureSecretKey;
+use ParagonIE\HaliteLegacy\V1\Asymmetric\SignaturePublicKey;
+use ParagonIE\HaliteLegacy\V1\Alerts as CryptoException;
 
 /**
  * Describes a pair of secret and public keys

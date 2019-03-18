@@ -2,13 +2,13 @@
 declare(strict_types=1);
 namespace ParagonIE\HaliteLegacy\V3\Asymmetric;
 
-use ParagonIE\Halite\Alerts\InvalidKey;
-use ParagonIE\Halite\HiddenString;
-use ParagonIE\Halite\Util as CryptoUtil;
+use ParagonIE\HaliteLegacy\V3\Alerts\InvalidKey;
+use ParagonIE\HaliteLegacy\V3\HiddenString;
+use ParagonIE\HaliteLegacy\V3\Util as CryptoUtil;
 
 /**
  * Class EncryptionPublicKey
- * @package ParagonIE\Halite\Asymmetric
+ * @package ParagonIE\HaliteLegacy\V3\Asymmetric
  */
 final class EncryptionPublicKey extends PublicKey
 {

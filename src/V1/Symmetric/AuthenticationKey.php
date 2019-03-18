@@ -1,8 +1,8 @@
 <?php
 namespace ParagonIE\HaliteLegacy\V1\Symmetric;
 
-use \ParagonIE\Halite\Util as CryptoUtil;
-use \ParagonIE\Halite\Alerts as CryptoException;
+use \ParagonIE\HaliteLegacy\V1\Util as CryptoUtil;
+use \ParagonIE\HaliteLegacy\V1\Alerts as CryptoException;
 
 final class AuthenticationKey extends SecretKey
 {

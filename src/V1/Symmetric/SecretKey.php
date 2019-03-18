@@ -1,8 +1,8 @@
 <?php
 namespace ParagonIE\HaliteLegacy\V1\Symmetric;
 
-use \ParagonIE\Halite\Contract;
-use \ParagonIE\Halite\Key;
+use \ParagonIE\HaliteLegacy\V1\Contract;
+use \ParagonIE\HaliteLegacy\V1\Key;
 
 class SecretKey extends Key implements Contract\KeyInterface
 {

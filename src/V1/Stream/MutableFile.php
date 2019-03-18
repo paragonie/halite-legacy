@@ -1,9 +1,9 @@
 <?php
 namespace ParagonIE\HaliteLegacy\V1\Stream;
 
-use \ParagonIE\Halite\Contract\StreamInterface;
-use \ParagonIE\Halite\Alerts as CryptoException;
-use \ParagonIE\Halite\Util;
+use \ParagonIE\HaliteLegacy\V1\Contract\StreamInterface;
+use \ParagonIE\HaliteLegacy\V1\Alerts as CryptoException;
+use \ParagonIE\HaliteLegacy\V1\Util;
 
 /**
  * Contrast with ReadOnlyFile: does not prevent race conditions by itself
@@ -43,7 +43,7 @@ class MutableFile implements StreamInterface
             $this->pos = \ftell($this->fp);
             $this->stat = \fstat($this->fp);
         } else {
-            throw new \ParagonIE\Halite\Alerts\InvalidType(
+            throw new \ParagonIE\HaliteLegacy\V1\Alerts\InvalidType(
                 'Argument 1: Expected a filename or resource'
             );
         }

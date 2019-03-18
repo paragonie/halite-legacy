@@ -2,12 +2,12 @@
 declare(strict_types=1);
 namespace ParagonIE\HaliteLegacy\V2\Asymmetric;
 
-use \ParagonIE\Halite\Alerts\InvalidKey;
-use \ParagonIE\Halite\Util as CryptoUtil;
+use \ParagonIE\HaliteLegacy\V2\Alerts\InvalidKey;
+use \ParagonIE\HaliteLegacy\V2\Util as CryptoUtil;
 
 /**
  * Class EncryptionSecretKey
- * @package ParagonIE\Halite\Asymmetric
+ * @package ParagonIE\HaliteLegacy\V2\Asymmetric
  */
 final class EncryptionSecretKey extends SecretKey
 {

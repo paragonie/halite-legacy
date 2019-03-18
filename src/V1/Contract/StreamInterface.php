@@ -1,7 +1,7 @@
 <?php
 namespace ParagonIE\HaliteLegacy\V1\Contract;
 
-use ParagonIE\Halite\Alerts\FileAccessDenied;
+use ParagonIE\HaliteLegacy\V1\Alerts\FileAccessDenied;
 
 /**
  * 

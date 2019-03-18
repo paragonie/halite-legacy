@@ -1,16 +1,16 @@
 <?php
 namespace ParagonIE\HaliteLegacy\V1;
 
-use ParagonIE\Halite\Alerts\CannotPerformOperation;
-use \ParagonIE\Halite\Asymmetric\EncryptionPublicKey;
-use \ParagonIE\Halite\Asymmetric\EncryptionSecretKey;
-use \ParagonIE\Halite\Asymmetric\SignaturePublicKey;
-use \ParagonIE\Halite\Asymmetric\SignatureSecretKey;
-use \ParagonIE\Halite\Symmetric\AuthenticationKey;
-use \ParagonIE\Halite\Symmetric\EncryptionKey;
-use \ParagonIE\Halite\Halite;
-use \ParagonIE\Halite\Key;
-use \ParagonIE\Halite\KeyPair;
+use ParagonIE\HaliteLegacy\V1\Alerts\CannotPerformOperation;
+use \ParagonIE\HaliteLegacy\V1\Asymmetric\EncryptionPublicKey;
+use \ParagonIE\HaliteLegacy\V1\Asymmetric\EncryptionSecretKey;
+use \ParagonIE\HaliteLegacy\V1\Asymmetric\SignaturePublicKey;
+use \ParagonIE\HaliteLegacy\V1\Asymmetric\SignatureSecretKey;
+use \ParagonIE\HaliteLegacy\V1\Symmetric\AuthenticationKey;
+use \ParagonIE\HaliteLegacy\V1\Symmetric\EncryptionKey;
+use \ParagonIE\HaliteLegacy\V1\Halite;
+use \ParagonIE\HaliteLegacy\V1\Key;
+use \ParagonIE\HaliteLegacy\V1\KeyPair;
 
 /**
  * Class for generating specific key types

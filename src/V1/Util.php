@@ -18,8 +18,8 @@ abstract class Util
      * @param string $info What sort of key are we deriving?
      * @param string $salt
      * @return string
-     * @throws \ParagonIE\Halite\Alerts\InvalidDigestLength
-     * @throws \ParagonIE\Halite\Alerts\CannotPerformOperation
+     * @throws \ParagonIE\HaliteLegacy\V1\Alerts\InvalidDigestLength
+     * @throws \ParagonIE\HaliteLegacy\V1\Alerts\CannotPerformOperation
      */
     public static function hkdfBlake2b($ikm, $length, $info = '', $salt = null)
     {
@@ -29,7 +29,7 @@ abstract class Util
             || $length < 0
             || $length > 255 * \Sodium\CRYPTO_GENERICHASH_KEYBYTES
         ) {
-            throw new \ParagonIE\Halite\Alerts\InvalidDigestLength(
+            throw new \ParagonIE\HaliteLegacy\V1\Alerts\InvalidDigestLength(
                 'Bad HKDF Digest Length'
             );
         }
@@ -47,7 +47,7 @@ abstract class Util
         // HKDF-Expand:
         // This check is useless, but it serves as a reminder to the spec.
         if (self::safeStrlen($prk) < \Sodium\CRYPTO_GENERICHASH_KEYBYTES) {
-            throw new \ParagonIE\Halite\Alerts\CannotPerformOperation(
+            throw new \ParagonIE\HaliteLegacy\V1\Alerts\CannotPerformOperation(
                 'An unknown error has occurred'
             );
         }
@@ -67,7 +67,7 @@ abstract class Util
         // ORM = first L octets of T
         $orm = self::safeSubstr($t, 0, $length);
         if ($orm === false) {
-            throw new \ParagonIE\Halite\Alerts\CannotPerformOperation(
+            throw new \ParagonIE\HaliteLegacy\V1\Alerts\CannotPerformOperation(
                 'An unknown error has occurred'
             );
         }
@@ -82,7 +82,7 @@ abstract class Util
      * @staticvar boolean $exists
      * @param string $str
      * @return int
-     * @throws \ParagonIE\Halite\Alerts\CannotPerformOperation
+     * @throws \ParagonIE\HaliteLegacy\V1\Alerts\CannotPerformOperation
      */
     public static function safeStrlen($str)
     {

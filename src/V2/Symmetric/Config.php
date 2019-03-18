@@ -2,14 +2,14 @@
 declare(strict_types=1);
 namespace ParagonIE\HaliteLegacy\V2\Symmetric;
 
-use \ParagonIE\Halite\{
+use \ParagonIE\HaliteLegacy\V2\{
     Alerts as CryptoException,
     Config as BaseConfig
 };
 
 /**
  * Class Config
- * @package ParagonIE\Halite\Symmetric
+ * @package ParagonIE\HaliteLegacy\V2\Symmetric
  */
 final class Config extends BaseConfig
 {

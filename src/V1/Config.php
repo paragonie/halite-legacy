@@ -1,7 +1,7 @@
 <?php
 namespace ParagonIE\HaliteLegacy\V1;
 
-use ParagonIE\Halite\Alerts as CryptoException;
+use ParagonIE\HaliteLegacy\V1\Alerts as CryptoException;
 
 /**
  * Encapsulates the configuration for a specific version of Halite

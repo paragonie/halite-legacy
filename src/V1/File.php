@@ -1,20 +1,20 @@
 <?php
 namespace ParagonIE\HaliteLegacy\V1;
 
-use \ParagonIE\Halite\Alerts as CryptoException;
-use \ParagonIE\Halite\Asymmetric\Crypto as AsymmetricCrypto;
-use \ParagonIE\Halite\Contract\KeyInterface;
-use \ParagonIE\Halite\Contract\StreamInterface;
-use \ParagonIE\Halite\Stream\MutableFile;
-use \ParagonIE\Halite\Stream\ReadOnlyFile;
-use \ParagonIE\Halite\Asymmetric\EncryptionSecretKey;
-use \ParagonIE\Halite\Asymmetric\EncryptionPublicKey;
-use \ParagonIE\Halite\Asymmetric\SignatureSecretKey;
-use \ParagonIE\Halite\Asymmetric\SignaturePublicKey;
-use \ParagonIE\Halite\Symmetric\AuthenticationKey;
-use \ParagonIE\Halite\Symmetric\EncryptionKey;
+use \ParagonIE\HaliteLegacy\V1\Alerts as CryptoException;
+use \ParagonIE\HaliteLegacy\V1\Asymmetric\Crypto as AsymmetricCrypto;
+use \ParagonIE\HaliteLegacy\V1\Contract\KeyInterface;
+use \ParagonIE\HaliteLegacy\V1\Contract\StreamInterface;
+use \ParagonIE\HaliteLegacy\V1\Stream\MutableFile;
+use \ParagonIE\HaliteLegacy\V1\Stream\ReadOnlyFile;
+use \ParagonIE\HaliteLegacy\V1\Asymmetric\EncryptionSecretKey;
+use \ParagonIE\HaliteLegacy\V1\Asymmetric\EncryptionPublicKey;
+use \ParagonIE\HaliteLegacy\V1\Asymmetric\SignatureSecretKey;
+use \ParagonIE\HaliteLegacy\V1\Asymmetric\SignaturePublicKey;
+use \ParagonIE\HaliteLegacy\V1\Symmetric\AuthenticationKey;
+use \ParagonIE\HaliteLegacy\V1\Symmetric\EncryptionKey;
 
-final class File implements \ParagonIE\Halite\Contract\FileInterface
+final class File implements \ParagonIE\HaliteLegacy\V1\Contract\FileInterface
 {
     /**
      * Lazy fallthrough method for checksumFile() and checksumResource()
@@ -37,7 +37,7 @@ final class File implements \ParagonIE\Halite\Contract\FileInterface
                 $raw
             );
         }
-        throw new \ParagonIE\Halite\Alerts\InvalidType(
+        throw new \ParagonIE\HaliteLegacy\V1\Alerts\InvalidType(
             'Argument 1: Expected a filename or resource'
         );
     }
@@ -67,7 +67,7 @@ final class File implements \ParagonIE\Halite\Contract\FileInterface
                 $key
             );
         }
-        throw new \ParagonIE\Halite\Alerts\InvalidType(
+        throw new \ParagonIE\HaliteLegacy\V1\Alerts\InvalidType(
             'Arguments 1 and 2 expect a filename or open file handle'
         );
     }
@@ -127,7 +127,7 @@ final class File implements \ParagonIE\Halite\Contract\FileInterface
                 $publickey
             );
         }
-        throw new \ParagonIE\Halite\Alerts\InvalidType(
+        throw new \ParagonIE\HaliteLegacy\V1\Alerts\InvalidType(
             'Arguments 1 and 2 expect a filename or open file handle'
         );
     }
@@ -162,7 +162,7 @@ final class File implements \ParagonIE\Halite\Contract\FileInterface
             );
             return $return;
         }
-        throw new \ParagonIE\Halite\Alerts\InvalidType(
+        throw new \ParagonIE\HaliteLegacy\V1\Alerts\InvalidType(
             'Arguments 1 and 2 expect a filename or open file handle'
         );
     }
@@ -192,7 +192,7 @@ final class File implements \ParagonIE\Halite\Contract\FileInterface
                 $raw_binary
             );
         }
-        throw new \ParagonIE\Halite\Alerts\InvalidType(
+        throw new \ParagonIE\HaliteLegacy\V1\Alerts\InvalidType(
             'Argument 1: Expected a filename or resource'
         );
     }
@@ -225,7 +225,7 @@ final class File implements \ParagonIE\Halite\Contract\FileInterface
                 $raw_binary
             );
         }
-        throw new \ParagonIE\Halite\Alerts\InvalidType(
+        throw new \ParagonIE\HaliteLegacy\V1\Alerts\InvalidType(
             'Argument 1: Expected a filename or resource'
         );
     }
@@ -283,7 +283,7 @@ final class File implements \ParagonIE\Halite\Contract\FileInterface
     ) {
         // Input validation
         if (!\is_resource($fileHandle)) {
-            throw new \ParagonIE\Halite\Alerts\InvalidType(
+            throw new \ParagonIE\HaliteLegacy\V1\Alerts\InvalidType(
                 'Expected input handle to be a resource'
             );
         }
@@ -296,7 +296,7 @@ final class File implements \ParagonIE\Halite\Contract\FileInterface
     }
     /**
      * 
-     * @param \ParagonIE\Halite\Contract\StreamInterface $fileStream
+     * @param \ParagonIE\HaliteLegacy\V1\Contract\StreamInterface $fileStream
      * @param AuthenticationKey $key
      * @param bool $raw
      * @return string
@@ -312,7 +312,7 @@ final class File implements \ParagonIE\Halite\Contract\FileInterface
         $config = self::getConfig(Halite::HALITE_VERSION_FILE, 'checksum');
         if ($key) {
             if (!($key instanceof AuthenticationKey)) {
-                throw new \ParagonIE\Halite\Alerts\InvalidKey(
+                throw new \ParagonIE\HaliteLegacy\V1\Alerts\InvalidKey(
                     'Argument 2: Expected an instance of AuthenticationKey'
                 );
             }
@@ -646,12 +646,12 @@ final class File implements \ParagonIE\Halite\Contract\FileInterface
     ) {
         // Input validation
         if (!\is_resource($input)) {
-            throw new \ParagonIE\Halite\Alerts\InvalidType(
+            throw new \ParagonIE\HaliteLegacy\V1\Alerts\InvalidType(
                 'Expected input handle to be a resource'
             );
         }
         if (!\is_resource($output)) {
-            throw new \ParagonIE\Halite\Alerts\InvalidType(
+            throw new \ParagonIE\HaliteLegacy\V1\Alerts\InvalidType(
                 'Expected output handle to be a resource'
             );
         }
@@ -683,7 +683,7 @@ final class File implements \ParagonIE\Halite\Contract\FileInterface
         $eph_public = '';
 
         if (!($key instanceof EncryptionKey)) {
-            throw new \ParagonIE\Halite\Alerts\InvalidKey(
+            throw new \ParagonIE\HaliteLegacy\V1\Alerts\InvalidKey(
                 'Argument 3: Expected an instance of EncryptionKey'
             );
         }
@@ -737,12 +737,12 @@ final class File implements \ParagonIE\Halite\Contract\FileInterface
     ) {
         // Input validation
         if (!\is_resource($input)) {
-            throw new \ParagonIE\Halite\Alerts\InvalidType(
+            throw new \ParagonIE\HaliteLegacy\V1\Alerts\InvalidType(
                 'Expected input handle to be a resource'
             );
         }
         if (!\is_resource($output)) {
-            throw new \ParagonIE\Halite\Alerts\InvalidType(
+            throw new \ParagonIE\HaliteLegacy\V1\Alerts\InvalidType(
                 'Expected output handle to be a resource'
             );
         }
@@ -768,7 +768,7 @@ final class File implements \ParagonIE\Halite\Contract\FileInterface
         KeyInterface $key
     ) {
         if (!($key instanceof EncryptionKey)) {
-            throw new \ParagonIE\Halite\Alerts\InvalidKey(
+            throw new \ParagonIE\HaliteLegacy\V1\Alerts\InvalidKey(
                 'Argument 3: Expected an instance of EncryptionKey'
             );
         }
@@ -832,12 +832,12 @@ final class File implements \ParagonIE\Halite\Contract\FileInterface
     ) {
         // Input validation
         if (!\is_resource($input)) {
-            throw new \ParagonIE\Halite\Alerts\InvalidType(
+            throw new \ParagonIE\HaliteLegacy\V1\Alerts\InvalidType(
                 'Expected input handle to be a resource'
             );
         }
         if (!\is_resource($output)) {
-            throw new \ParagonIE\Halite\Alerts\InvalidType(
+            throw new \ParagonIE\HaliteLegacy\V1\Alerts\InvalidType(
                 'Expected output handle to be a resource'
             );
         }
@@ -1086,7 +1086,7 @@ final class File implements \ParagonIE\Halite\Contract\FileInterface
         $raw_binary = false
     ) {
         if (!($secretkey instanceof SignatureSecretKey)) {
-            throw new \ParagonIE\Halite\Alerts\InvalidKey(
+            throw new \ParagonIE\HaliteLegacy\V1\Alerts\InvalidKey(
                 'Argument 1: Expected an instance of SignatureSecretKey'
             );
         }
@@ -1139,7 +1139,7 @@ final class File implements \ParagonIE\Halite\Contract\FileInterface
         $raw_binary = false
     ) {
         if (!($publickey instanceof SignaturePublicKey)) {
-            throw new \ParagonIE\Halite\Alerts\InvalidKey(
+            throw new \ParagonIE\HaliteLegacy\V1\Alerts\InvalidKey(
                 'Argument 2: Expected an instance of SignaturePublicKey'
             );
         }
@@ -1157,7 +1157,7 @@ final class File implements \ParagonIE\Halite\Contract\FileInterface
      * 
      * @param string $header
      * @param string $mode
-     * @return \ParagonIE\Halite\Config
+     * @return \ParagonIE\HaliteLegacy\V1\Config
      * @throws CryptoException\InvalidMessage
      * @throws \Error
      */
@@ -1271,14 +1271,14 @@ final class File implements \ParagonIE\Halite\Contract\FileInterface
     /**
      * Split a key using HKDF
      * 
-     * @param \ParagonIE\Halite\Contract\KeyInterface $master
+     * @param \ParagonIE\HaliteLegacy\V1\Contract\KeyInterface $master
      * @param string $salt
      * @param Config $config
      * @return array
      * @throws \TypeError
      */
     protected static function splitKeys(
-        \ParagonIE\Halite\Contract\KeyInterface $master,
+        \ParagonIE\HaliteLegacy\V1\Contract\KeyInterface $master,
         $salt = null,
         Config $config = null
     ) {
@@ -1327,7 +1327,7 @@ final class File implements \ParagonIE\Halite\Contract\FileInterface
         Config $config
     ) {
         if (!($encKey instanceof EncryptionKey)) {
-            throw new \ParagonIE\Halite\Alerts\InvalidKey(
+            throw new \ParagonIE\HaliteLegacy\V1\Alerts\InvalidKey(
                 'Argument 3: Expected an instance of EncryptionKey'
             );
         }
@@ -1387,7 +1387,7 @@ final class File implements \ParagonIE\Halite\Contract\FileInterface
         array &$chunk_macs
     ) {
         if (!($encKey instanceof EncryptionKey)) {
-            throw new \ParagonIE\Halite\Alerts\InvalidKey(
+            throw new \ParagonIE\HaliteLegacy\V1\Alerts\InvalidKey(
                 'Argument 3: Expected an instance of EncryptionKey'
             );
         }

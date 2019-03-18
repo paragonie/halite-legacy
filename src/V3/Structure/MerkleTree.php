@@ -2,8 +2,8 @@
 declare(strict_types=1);
 namespace ParagonIE\HaliteLegacy\V3\Structure;
 
-use ParagonIE\Halite\Util;
-use ParagonIE\Halite\Alerts\InvalidDigestLength;
+use ParagonIE\HaliteLegacy\V3\Util;
+use ParagonIE\HaliteLegacy\V3\Alerts\InvalidDigestLength;
 
 /**
  * Class MerkleTree
@@ -16,7 +16,7 @@ use ParagonIE\Halite\Alerts\InvalidDigestLength;
  *
  * @ref http://php.net/manual/en/functions.returning-values.php#functions.returning-values.type-declaration
  *
- * @package ParagonIE\Halite\Structure
+ * @package ParagonIE\HaliteLegacy\V3\Structure
  */
 class MerkleTree
 {

@@ -2,7 +2,7 @@
 declare(strict_types=1);
 namespace ParagonIE\HaliteLegacy\V3\Contract;
 
-use ParagonIE\Halite\Alerts\{
+use ParagonIE\HaliteLegacy\V3\Alerts\{
     CannotPerformOperation,
     FileAccessDenied
 };
@@ -17,7 +17,7 @@ use ParagonIE\Halite\Alerts\{
  *
  * @ref http://php.net/manual/en/functions.returning-values.php#functions.returning-values.type-declaration
  *
- * @package ParagonIE\Halite\Contract
+ * @package ParagonIE\HaliteLegacy\V3\Contract
  */
 interface StreamInterface
 {

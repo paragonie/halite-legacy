@@ -1,9 +1,9 @@
 <?php
 namespace ParagonIE\HaliteLegacy\V1\Asymmetric;
 
-use \ParagonIE\Halite\Contract;
-use \ParagonIE\Halite\Key;
-use \ParagonIE\Halite\Alerts\CannotPerformOperation;
+use \ParagonIE\HaliteLegacy\V1\Contract;
+use \ParagonIE\HaliteLegacy\V1\Key;
+use \ParagonIE\HaliteLegacy\V1\Alerts\CannotPerformOperation;
 
 class SecretKey extends Key implements Contract\KeyInterface
 {

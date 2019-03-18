@@ -1,16 +1,16 @@
 <?php
 namespace ParagonIE\HaliteLegacy\V1;
 
-use \ParagonIE\Halite\Alerts\InvalidKey;
-use \ParagonIE\Halite\Alerts\InvalidType;
-use \ParagonIE\Halite\Contract\KeyInterface;
-use \ParagonIE\Halite\Symmetric\Crypto;
-use \ParagonIE\Halite\Symmetric\EncryptionKey;
+use \ParagonIE\HaliteLegacy\V1\Alerts\InvalidKey;
+use \ParagonIE\HaliteLegacy\V1\Alerts\InvalidType;
+use \ParagonIE\HaliteLegacy\V1\Contract\KeyInterface;
+use \ParagonIE\HaliteLegacy\V1\Symmetric\Crypto;
+use \ParagonIE\HaliteLegacy\V1\Symmetric\EncryptionKey;
 
 /**
  * Secure password storage and secure password verification
  */
-abstract class Password implements \ParagonIE\Halite\Contract\PasswordInterface
+abstract class Password implements \ParagonIE\HaliteLegacy\V1\Contract\PasswordInterface
 {
     /**
      * Hash then encrypt a password

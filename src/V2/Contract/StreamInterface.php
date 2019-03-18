@@ -2,7 +2,7 @@
 declare(strict_types=1);
 namespace ParagonIE\HaliteLegacy\V2\Contract;
 
-use \ParagonIE\Halite\Alerts\{
+use \ParagonIE\HaliteLegacy\V2\Alerts\{
     CannotPerformOperation,
     FileAccessDenied
 };
@@ -12,7 +12,7 @@ use \ParagonIE\Halite\Alerts\{
  *
  * A stream used by Halite, internally.
  *
- * @package ParagonIE\Halite\Contract
+ * @package ParagonIE\HaliteLegacy\V2\Contract
  */
 interface StreamInterface
 {

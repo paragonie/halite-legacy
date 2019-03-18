@@ -2,7 +2,7 @@
 declare(strict_types=1);
 namespace ParagonIE\HaliteLegacy\V3\Symmetric;
 
-use ParagonIE\Halite\{
+use ParagonIE\HaliteLegacy\V3\{
     Alerts as CryptoException,
     Config as BaseConfig,
     Halite,
@@ -19,7 +19,7 @@ use ParagonIE\Halite\{
  *
  * @ref http://php.net/manual/en/functions.returning-values.php#functions.returning-values.type-declaration
  *
- * @package ParagonIE\Halite\Symmetric
+ * @package ParagonIE\HaliteLegacy\V3\Symmetric
  */
 final class Config extends BaseConfig
 {

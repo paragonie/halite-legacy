@@ -1,8 +1,8 @@
 <?php
 namespace ParagonIE\HaliteLegacy\V1\Contract;
 
-use \ParagonIE\Halite\Symmetric\AuthenticationKey;
-use \ParagonIE\Halite\Symmetric\EncryptionKey;
+use \ParagonIE\HaliteLegacy\V1\Symmetric\AuthenticationKey;
+use \ParagonIE\HaliteLegacy\V1\Symmetric\EncryptionKey;
 
 /**
  * An interface fundamental to all cryptography implementations

@@ -1,8 +1,8 @@
 <?php
 namespace ParagonIE\HaliteLegacy\V1;
 
-use ParagonIE\Halite\Alerts as CryptoException;
-use ParagonIE\Halite\Contract;
+use ParagonIE\HaliteLegacy\V1\Alerts as CryptoException;
+use ParagonIE\HaliteLegacy\V1\Contract;
 
 /**
  * Symmetric Key Crypography uses one secret key, while Asymmetric Key Cryptography

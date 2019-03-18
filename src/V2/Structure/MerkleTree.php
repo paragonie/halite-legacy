@@ -2,8 +2,8 @@
 declare(strict_types=1);
 namespace ParagonIE\HaliteLegacy\V2\Structure;
 
-use \ParagonIE\Halite\Util;
-use \ParagonIE\Halite\Alerts\InvalidDigestLength;
+use \ParagonIE\HaliteLegacy\V2\Util;
+use \ParagonIE\HaliteLegacy\V2\Alerts\InvalidDigestLength;
 
 /**
  * Class MerkleTree
@@ -11,7 +11,7 @@ use \ParagonIE\Halite\Alerts\InvalidDigestLength;
  * An implementation of a Merkle hash tree, built on the BLAKE2b hash function
  * (provided by libsodium)
  *
- * @package ParagonIE\Halite\Structure
+ * @package ParagonIE\HaliteLegacy\V2\Structure
  */
 class MerkleTree
 {

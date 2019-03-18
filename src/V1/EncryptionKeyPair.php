@@ -1,9 +1,9 @@
 <?php
 namespace ParagonIE\HaliteLegacy\V1;
 
-use ParagonIE\Halite\Asymmetric\EncryptionSecretKey;
-use ParagonIE\Halite\Asymmetric\EncryptionPublicKey;
-use ParagonIE\Halite\Alerts as CryptoException;
+use ParagonIE\HaliteLegacy\V1\Asymmetric\EncryptionSecretKey;
+use ParagonIE\HaliteLegacy\V1\Asymmetric\EncryptionPublicKey;
+use ParagonIE\HaliteLegacy\V1\Alerts as CryptoException;
 
 /**
  * Describes a pair of secret and public keys
@@ -155,7 +155,7 @@ final class EncryptionKeyPair extends KeyPair
      * @param string $password
      * @param string $salt
      * @param int $type
-     * @return array|\ParagonIE\Halite\KeyPair
+     * @return array|\ParagonIE\HaliteLegacy\V1\KeyPair
      * @throws CryptoException\InvalidFlags
      */
     public static function deriveFromPassword($password, $salt, $type = Key::CRYPTO_BOX)

@@ -2,8 +2,8 @@
 declare(strict_types=1);
 namespace ParagonIE\HaliteLegacy\V3;
 
-use ParagonIE\Halite\Alerts as CryptoException;
-use ParagonIE\Halite\{
+use ParagonIE\HaliteLegacy\V3\Alerts as CryptoException;
+use ParagonIE\HaliteLegacy\V3\{
     Asymmetric\EncryptionPublicKey,
     Asymmetric\EncryptionSecretKey,
     Asymmetric\SignaturePublicKey,
@@ -67,7 +67,7 @@ final class KeyFactory
      * Generate a key pair for public key encryption
      * 
      * @param string &$secretKey
-     * @return \ParagonIE\Halite\EncryptionKeyPair
+     * @return \ParagonIE\HaliteLegacy\V3\EncryptionKeyPair
      */
     public static function generateEncryptionKeyPair(string &$secretKey = ''): EncryptionKeyPair
     {

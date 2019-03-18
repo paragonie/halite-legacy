@@ -2,10 +2,10 @@
 declare(strict_types=1);
 namespace ParagonIE\HaliteLegacy\V2\Stream;
 
-use \ParagonIE\Halite\Contract\StreamInterface;
-use \ParagonIE\Halite\Alerts as CryptoException;
-use \ParagonIE\Halite\Key;
-use \ParagonIE\Halite\Util as CryptoUtil;
+use \ParagonIE\HaliteLegacy\V2\Contract\StreamInterface;
+use \ParagonIE\HaliteLegacy\V2\Alerts as CryptoException;
+use \ParagonIE\HaliteLegacy\V2\Key;
+use \ParagonIE\HaliteLegacy\V2\Util as CryptoUtil;
 
 class ReadOnlyFile implements StreamInterface
 {
