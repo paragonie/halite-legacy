@@ -2,12 +2,12 @@
 declare(strict_types=1);
 namespace ParagonIE\HaliteLegacy\V3\Asymmetric;
 
-use ParagonIE\Halite\HiddenString;
-use ParagonIE\Halite\Key;
+use ParagonIE\HaliteLegacy\V3\HiddenString;
+use ParagonIE\HaliteLegacy\V3\Key;
 
 /**
  * Class PublicKey
- * @package ParagonIE\Halite\Asymmetric
+ * @package ParagonIE\HaliteLegacy\V3\Asymmetric
  */
 class PublicKey extends Key
 {

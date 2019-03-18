@@ -2,7 +2,7 @@
 declare(strict_types=1);
 namespace ParagonIE\HaliteLegacy\V2;
 
-use ParagonIE\Halite\{
+use ParagonIE\HaliteLegacy\V2\{
     Alerts as CryptoException,
     Asymmetric\EncryptionPublicKey,
     Asymmetric\EncryptionSecretKey

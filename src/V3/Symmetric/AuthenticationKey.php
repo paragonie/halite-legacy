@@ -2,13 +2,13 @@
 declare(strict_types=1);
 namespace ParagonIE\HaliteLegacy\V3\Symmetric;
 
-use ParagonIE\Halite\Alerts\InvalidKey;
-use ParagonIE\Halite\HiddenString;
-use ParagonIE\Halite\Util as CryptoUtil;
+use ParagonIE\HaliteLegacy\V3\Alerts\InvalidKey;
+use ParagonIE\HaliteLegacy\V3\HiddenString;
+use ParagonIE\HaliteLegacy\V3\Util as CryptoUtil;
 
 /**
  * Class AuthenticationKey
- * @package ParagonIE\Halite\Symmetric
+ * @package ParagonIE\HaliteLegacy\V3\Symmetric
  */
 final class AuthenticationKey extends SecretKey
 {

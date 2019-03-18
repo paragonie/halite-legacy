@@ -1,8 +1,8 @@
 <?php
 namespace ParagonIE\HaliteLegacy\V1\Asymmetric;
 
-use \ParagonIE\Halite\Contract;
-use \ParagonIE\Halite\Key;
+use \ParagonIE\HaliteLegacy\V1\Contract;
+use \ParagonIE\HaliteLegacy\V1\Key;
 
 class PublicKey extends Key implements Contract\KeyInterface
 {

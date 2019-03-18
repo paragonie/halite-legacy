@@ -1,11 +1,11 @@
 <?php
 namespace ParagonIE\HaliteLegacy\V1;
 
-use \ParagonIE\Halite\Contract\KeyInterface;
-use \ParagonIE\Halite\Symmetric\EncryptionKey;
-use \ParagonIE\Halite\Symmetric\Crypto;
-use \ParagonIE\Halite\Alerts\InvalidType;
-use \ParagonIE\Halite\Alerts\InvalidMessage;
+use \ParagonIE\HaliteLegacy\V1\Contract\KeyInterface;
+use \ParagonIE\HaliteLegacy\V1\Symmetric\EncryptionKey;
+use \ParagonIE\HaliteLegacy\V1\Symmetric\Crypto;
+use \ParagonIE\HaliteLegacy\V1\Alerts\InvalidType;
+use \ParagonIE\HaliteLegacy\V1\Alerts\InvalidMessage;
 
 final class Cookie 
 {
@@ -15,7 +15,7 @@ final class Cookie
     public function __construct(KeyInterface $key)
     {
         if (!($key instanceof EncryptionKey)) {
-            throw new \ParagonIE\Halite\Alerts\InvalidKey(
+            throw new \ParagonIE\HaliteLegacy\V1\Alerts\InvalidKey(
                 'Argument 1: Expected an instance of EncryptionKey'
             );
         }

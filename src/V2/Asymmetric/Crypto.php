@@ -2,8 +2,8 @@
 declare(strict_types=1);
 namespace ParagonIE\HaliteLegacy\V2\Asymmetric;
 
-use \ParagonIE\Halite\Alerts as CryptoException;
-use \ParagonIE\Halite\{
+use \ParagonIE\HaliteLegacy\V2\Alerts as CryptoException;
+use \ParagonIE\HaliteLegacy\V2\{
     Util as CryptoUtil,
     Key,
     Symmetric\Crypto as SymmetricCrypto,
@@ -15,7 +15,7 @@ use \ParagonIE\Halite\{
  *
  * Handles all public key cryptography
  *
- * @package ParagonIE\Halite\Asymmetric
+ * @package ParagonIE\HaliteLegacy\V2\Asymmetric
  */
 abstract class Crypto
 {

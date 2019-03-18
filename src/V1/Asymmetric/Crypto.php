@@ -1,11 +1,11 @@
 <?php
 namespace ParagonIE\HaliteLegacy\V1\Asymmetric;
 
-use \ParagonIE\Halite\Alerts as CryptoException;
-use \ParagonIE\Halite\Util as CryptoUtil;
-use \ParagonIE\Halite\Contract;
-use \ParagonIE\Halite\Symmetric\Crypto as SymmetricCrypto;
-use \ParagonIE\Halite\Symmetric\EncryptionKey;
+use \ParagonIE\HaliteLegacy\V1\Alerts as CryptoException;
+use \ParagonIE\HaliteLegacy\V1\Util as CryptoUtil;
+use \ParagonIE\HaliteLegacy\V1\Contract;
+use \ParagonIE\HaliteLegacy\V1\Symmetric\Crypto as SymmetricCrypto;
+use \ParagonIE\HaliteLegacy\V1\Symmetric\EncryptionKey;
 
 abstract class Crypto implements Contract\AsymmetricKeyCryptoInterface
 {

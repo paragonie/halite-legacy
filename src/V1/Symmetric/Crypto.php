@@ -1,12 +1,12 @@
 <?php
 namespace ParagonIE\HaliteLegacy\V1\Symmetric;
 
-use \ParagonIE\Halite\Alerts as CryptoException;
-use \ParagonIE\Halite\Contract;
-use \ParagonIE\Halite\Util as CryptoUtil;
-use \ParagonIE\Halite\Halite;
-use \ParagonIE\Halite\Config;
-use \ParagonIE\Halite\Symmetric\Config as SymmetricConfig;
+use \ParagonIE\HaliteLegacy\V1\Alerts as CryptoException;
+use \ParagonIE\HaliteLegacy\V1\Contract;
+use \ParagonIE\HaliteLegacy\V1\Util as CryptoUtil;
+use \ParagonIE\HaliteLegacy\V1\Halite;
+use \ParagonIE\HaliteLegacy\V1\Config;
+use \ParagonIE\HaliteLegacy\V1\Symmetric\Config as SymmetricConfig;
 
 abstract class Crypto implements Contract\SymmetricKeyCryptoInterface
 {

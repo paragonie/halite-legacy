@@ -2,10 +2,10 @@
 declare(strict_types=1);
 namespace ParagonIE\HaliteLegacy\V3\Stream;
 
-use ParagonIE\Halite\Contract\StreamInterface;
-use ParagonIE\Halite\Alerts as CryptoException;
-use ParagonIE\Halite\Key;
-use ParagonIE\Halite\Util as CryptoUtil;
+use ParagonIE\HaliteLegacy\V3\Contract\StreamInterface;
+use ParagonIE\HaliteLegacy\V3\Alerts as CryptoException;
+use ParagonIE\HaliteLegacy\V3\Key;
+use ParagonIE\HaliteLegacy\V3\Util as CryptoUtil;
 
 /**
  * Class ReadOnlyFile
@@ -15,7 +15,7 @@ use ParagonIE\Halite\Util as CryptoUtil;
  *
  * @ref http://php.net/manual/en/functions.returning-values.php#functions.returning-values.type-declaration
  *
- * @package ParagonIE\Halite\Stream
+ * @package ParagonIE\HaliteLegacy\V3\Stream
  */
 class ReadOnlyFile implements StreamInterface
 {

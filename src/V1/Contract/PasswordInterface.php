@@ -1,7 +1,7 @@
 <?php
 namespace ParagonIE\HaliteLegacy\V1\Contract;
 
-use \ParagonIE\Halite\Symmetric\EncryptionKey;
+use \ParagonIE\HaliteLegacy\V1\Symmetric\EncryptionKey;
 
 /**
  * Hash then encrypt

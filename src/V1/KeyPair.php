@@ -1,11 +1,11 @@
 <?php
 namespace ParagonIE\HaliteLegacy\V1;
 
-use \ParagonIE\Halite\Asymmetric\EncryptionSecretKey;
-use \ParagonIE\Halite\Asymmetric\EncryptionPublicKey;
-use \ParagonIE\Halite\Asymmetric\SignatureSecretKey;
-use \ParagonIE\Halite\Asymmetric\SignaturePublicKey;
-use \ParagonIE\Halite\Alerts as CryptoException;
+use \ParagonIE\HaliteLegacy\V1\Asymmetric\EncryptionSecretKey;
+use \ParagonIE\HaliteLegacy\V1\Asymmetric\EncryptionPublicKey;
+use \ParagonIE\HaliteLegacy\V1\Asymmetric\SignatureSecretKey;
+use \ParagonIE\HaliteLegacy\V1\Asymmetric\SignaturePublicKey;
+use \ParagonIE\HaliteLegacy\V1\Alerts as CryptoException;
 use Psr\Log\InvalidArgumentException;
 
 /**

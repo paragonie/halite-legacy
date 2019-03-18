@@ -2,7 +2,7 @@
 declare(strict_types=1);
 namespace ParagonIE\HaliteLegacy\V2;
 
-use \ParagonIE\Halite\Alerts\{
+use \ParagonIE\HaliteLegacy\V2\Alerts\{
     CannotPerformOperation,
     InvalidDigestLength,
     InvalidType

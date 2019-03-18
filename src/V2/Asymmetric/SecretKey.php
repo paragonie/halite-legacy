@@ -1,13 +1,13 @@
 <?php
 namespace ParagonIE\HaliteLegacy\V2\Asymmetric;
 
-use \ParagonIE\Halite\Contract;
-use \ParagonIE\Halite\Key;
-use \ParagonIE\Halite\Alerts\CannotPerformOperation;
+use \ParagonIE\HaliteLegacy\V2\Contract;
+use \ParagonIE\HaliteLegacy\V2\Key;
+use \ParagonIE\HaliteLegacy\V2\Alerts\CannotPerformOperation;
 
 /**
  * Class SecretKey
- * @package ParagonIE\Halite\Asymmetric
+ * @package ParagonIE\HaliteLegacy\V2\Asymmetric
  */
 class SecretKey extends Key
 {

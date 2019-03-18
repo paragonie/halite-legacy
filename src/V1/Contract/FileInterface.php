@@ -1,9 +1,9 @@
 <?php
 namespace ParagonIE\HaliteLegacy\V1\Contract;
 
-use \ParagonIE\Halite\Asymmetric\PublicKey;
-use \ParagonIE\Halite\Asymmetric\SecretKey;
-use \ParagonIE\Halite\Symmetric\SecretKey as SymmetricKey;
+use \ParagonIE\HaliteLegacy\V1\Asymmetric\PublicKey;
+use \ParagonIE\HaliteLegacy\V1\Asymmetric\SecretKey;
+use \ParagonIE\HaliteLegacy\V1\Symmetric\SecretKey as SymmetricKey;
 
 /**
  * An interface for encrypting/decrypting files

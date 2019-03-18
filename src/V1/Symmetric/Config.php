@@ -1,8 +1,8 @@
 <?php
 namespace ParagonIE\HaliteLegacy\V1\Symmetric;
 
-use \ParagonIE\Halite\Alerts as CryptoException;
-use \ParagonIE\Halite\Config as BaseConfig;
+use \ParagonIE\HaliteLegacy\V1\Alerts as CryptoException;
+use \ParagonIE\HaliteLegacy\V1\Config as BaseConfig;
 
 final class Config extends BaseConfig
 {
@@ -11,7 +11,7 @@ final class Config extends BaseConfig
      * 
      * @param string $header
      * @param string $mode
-     * @return \ParagonIE\Halite\Config
+     * @return \ParagonIE\HaliteLegacy\V1\Config
      * @throws CryptoException\InvalidMessage
      */
     public static function getConfig($header, $mode = 'encrypt')

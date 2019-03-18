@@ -9,7 +9,7 @@ use ParagonIE\ConstantTime\{
     Base64UrlSafe,
     Hex
 };
-use ParagonIE\Halite\Alerts\InvalidType;
+use ParagonIE\HaliteLegacy\V3\Alerts\InvalidType;
 
 /**
  * Class Halite

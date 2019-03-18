@@ -2,11 +2,11 @@
 declare(strict_types=1);
 namespace ParagonIE\HaliteLegacy\V3\Symmetric;
 
-use ParagonIE\Halite\Key;
+use ParagonIE\HaliteLegacy\V3\Key;
 
 /**
  * Class SecretKey
- * @package ParagonIE\Halite\Symmetric
+ * @package ParagonIE\HaliteLegacy\V3\Symmetric
  */
 class SecretKey extends Key
 {

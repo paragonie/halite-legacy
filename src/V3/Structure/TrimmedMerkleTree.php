@@ -2,7 +2,7 @@
 declare(strict_types=1);
 namespace ParagonIE\HaliteLegacy\V3\Structure;
 
-use ParagonIE\Halite\Util;
+use ParagonIE\HaliteLegacy\V3\Util;
 
 /**
  * Class TrimmedMerkleTree
@@ -18,7 +18,7 @@ use ParagonIE\Halite\Util;
  *
  * @ref http://php.net/manual/en/functions.returning-values.php#functions.returning-values.type-declaration
  *
- * @package ParagonIE\Halite\Structure
+ * @package ParagonIE\HaliteLegacy\V3\Structure
  */
 class TrimmedMerkleTree extends MerkleTree
 {

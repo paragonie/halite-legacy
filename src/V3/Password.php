@@ -3,7 +3,7 @@ declare(strict_types=1);
 namespace ParagonIE\HaliteLegacy\V3;
 
 use ParagonIE\ConstantTime\Base64UrlSafe;
-use ParagonIE\Halite\{
+use ParagonIE\HaliteLegacy\V3\{
     Alerts\InvalidMessage,
     Symmetric\Config as SymmetricConfig,
     Symmetric\Crypto,

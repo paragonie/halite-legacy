@@ -2,7 +2,7 @@
 declare(strict_types=1);
 namespace ParagonIE\HaliteLegacy\V2\Symmetric;
 
-use \ParagonIE\Halite\{
+use \ParagonIE\HaliteLegacy\V2\{
     Alerts as CryptoException,
     Config,
     Halite,
@@ -15,7 +15,7 @@ use \ParagonIE\Halite\{
  *
  * Encapsulates symmetric-key cryptography
  *
- * @package ParagonIE\Halite\Symmetric
+ * @package ParagonIE\HaliteLegacy\V2\Symmetric
  */
 abstract class Crypto
 {

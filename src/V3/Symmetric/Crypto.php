@@ -2,12 +2,12 @@
 declare(strict_types=1);
 namespace ParagonIE\HaliteLegacy\V3\Symmetric;
 
-use ParagonIE\Halite\Alerts\{
+use ParagonIE\HaliteLegacy\V3\Alerts\{
     InvalidKey,
     InvalidMessage,
     InvalidSignature
 };
-use ParagonIE\Halite\{
+use ParagonIE\HaliteLegacy\V3\{
     Config as BaseConfig,
     Halite,
     HiddenString,
@@ -25,7 +25,7 @@ use ParagonIE\Halite\{
  *
  * @ref http://php.net/manual/en/functions.returning-values.php#functions.returning-values.type-declaration
  *
- * @package ParagonIE\Halite\Symmetric
+ * @package ParagonIE\HaliteLegacy\V3\Symmetric
  */
 final class Crypto
 {
