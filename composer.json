@@ -3,8 +3,8 @@
   "description": "Legacy implementations of Halite (can be loaded alongside Halite to facilitate migrations)",
   "type": "library",
   "require": {
-    "php": "^7",
-    "paragonie/halite": "^4.5",
+    "php": "^7|^8",
+    "paragonie/halite": "^5.1",
     "paragonie/sodium_compat": "^1.9"
   },
   "require-dev": {
