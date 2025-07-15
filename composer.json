@@ -4,6 +4,7 @@
   "type": "library",
   "require": {
     "php": "^7|^8",
+    "paragonie/constant_time_encoding": "^3",
     "paragonie/halite": "^4|^5",
     "paragonie/sodium_compat": "^1.21"
   },
