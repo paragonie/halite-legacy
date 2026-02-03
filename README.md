@@ -66,8 +66,8 @@ You can use it like so:
 ```php
 <?php
 use ParagonIE\HaliteLegacy\VersionHelper;
-use ParagonIE\Halite\Halite\Symmetric\Crypto as SymmetricLatest;
-use ParagonIE\Halite\HaliteLegacy\V4\Symmetric\Crypto as SymmetricV4;
+use ParagonIE\Halite\Symmetric\Crypto as SymmetricLatest;
+use ParagonIE\HaliteLegacy\V4\Symmetric\Crypto as SymmetricV4;
 
 // Version will be an integer, or it will throw
 $inferredVersion = VersionHelper::inferVersionFromCiphertext($ciphertext);
