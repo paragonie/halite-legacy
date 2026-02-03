@@ -2,7 +2,7 @@
 declare(strict_types=1);
 namespace ParagonIE\HaliteLegacy\V4;
 
-use ParagonIE\HaliteLegacy\Asymmetric\{
+use ParagonIE\HaliteLegacy\V4\Asymmetric\{
     PublicKey,
     SecretKey
 };

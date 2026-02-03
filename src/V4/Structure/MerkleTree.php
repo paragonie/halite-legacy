@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
-namespace ParagonIE\HaliteLegacy\Structure;
+namespace ParagonIE\HaliteLegacy\V4\Structure;
 
 use ParagonIE\ConstantTime\Hex;
-use ParagonIE\HaliteLegacy\Alerts\{
+use ParagonIE\HaliteLegacy\V4\Alerts\{
     CannotPerformOperation,
     InvalidDigestLength
 };
-use ParagonIE\HaliteLegacy\Util;
+use ParagonIE\HaliteLegacy\V4\Util;
 
 /**
  * Class MerkleTree
@@ -20,7 +20,7 @@ use ParagonIE\HaliteLegacy\Util;
  *
  * @ref http://php.net/manual/en/functions.returning-values.php#functions.returning-values.type-declaration
  *
- * @package ParagonIE\HaliteLegacy\Structure
+ * @package ParagonIE\HaliteLegacy\V4\Structure
  *
  * This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this

@@ -7,13 +7,13 @@ use ParagonIE\ConstantTime\{
     Binary,
     Hex
 };
-use ParagonIE\HaliteLegacy\Alerts\{
+use ParagonIE\HaliteLegacy\V4\Alerts\{
     CannotPerformOperation,
     InvalidDigestLength,
     InvalidMessage,
     InvalidType
 };
-use ParagonIE\HaliteLegacy\Symmetric\{
+use ParagonIE\HaliteLegacy\V4\Symmetric\{
     Config as SymmetricConfig,
     Crypto,
     EncryptionKey

@@ -2,7 +2,7 @@
 declare(strict_types=1);
 namespace ParagonIE\HaliteLegacy\V4;
 
-use ParagonIE\HaliteLegacy\Alerts\{
+use ParagonIE\HaliteLegacy\V4\Alerts\{
     CannotCloneKey,
     CannotSerializeKey
 };

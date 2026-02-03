@@ -6,13 +6,13 @@ use ParagonIE\ConstantTime\{
     Binary,
     Hex
 };
-use ParagonIE\HaliteLegacy\Alerts\{
+use ParagonIE\HaliteLegacy\V4\Alerts\{
     CannotPerformOperation,
     InvalidKey,
     InvalidSalt,
     InvalidType
 };
-use ParagonIE\HaliteLegacy\{
+use ParagonIE\HaliteLegacy\V4\{
     Asymmetric\EncryptionPublicKey,
     Asymmetric\EncryptionSecretKey,
     Asymmetric\SignaturePublicKey,
