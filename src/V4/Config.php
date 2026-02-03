@@ -2,7 +2,7 @@
 declare(strict_types=1);
 namespace ParagonIE\HaliteLegacy\V4;
 
-use ParagonIE\HaliteLegacy\Alerts\ConfigDirectiveNotFound;
+use ParagonIE\HaliteLegacy\V4\Alerts\ConfigDirectiveNotFound;
 
 /**
  * Class Config

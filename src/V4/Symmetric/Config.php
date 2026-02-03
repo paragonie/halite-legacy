@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
-namespace ParagonIE\HaliteLegacy\Symmetric;
+namespace ParagonIE\HaliteLegacy\V4\Symmetric;
 
 use ParagonIE\ConstantTime\Binary;
-use ParagonIE\HaliteLegacy\Alerts\InvalidMessage;
-use ParagonIE\HaliteLegacy\{
+use ParagonIE\HaliteLegacy\V4\Alerts\InvalidMessage;
+use ParagonIE\HaliteLegacy\V4\{
     Config as BaseConfig,
     Halite
 };
@@ -19,7 +19,7 @@ use ParagonIE\HaliteLegacy\{
  *
  * @ref http://php.net/manual/en/functions.returning-values.php#functions.returning-values.type-declaration
  *
- * @package ParagonIE\HaliteLegacy\Symmetric
+ * @package ParagonIE\HaliteLegacy\V4\Symmetric
  *
  * This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this

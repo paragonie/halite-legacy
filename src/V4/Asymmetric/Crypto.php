@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
-namespace ParagonIE\HaliteLegacy\Asymmetric;
+namespace ParagonIE\HaliteLegacy\V4\Asymmetric;
 
 use ParagonIE\ConstantTime\Binary;
-use ParagonIE\HaliteLegacy\Alerts\{
+use ParagonIE\HaliteLegacy\V4\Alerts\{
     CannotPerformOperation,
     InvalidDigestLength,
     InvalidKey,
@@ -11,7 +11,7 @@ use ParagonIE\HaliteLegacy\Alerts\{
     InvalidSignature,
     InvalidType
 };
-use ParagonIE\HaliteLegacy\{
+use ParagonIE\HaliteLegacy\V4\{
     Halite,
     Key,
     Symmetric\Crypto as SymmetricCrypto,
@@ -30,7 +30,7 @@ use ParagonIE\HiddenString\HiddenString;
  *
  * @ref http://php.net/manual/en/functions.returning-values.php#functions.returning-values.type-declaration
  *
- * @package ParagonIE\HaliteLegacy\Asymmetric
+ * @package ParagonIE\HaliteLegacy\V4\Asymmetric
  *
  * This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this

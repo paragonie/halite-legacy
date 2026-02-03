@@ -2,8 +2,8 @@
 declare(strict_types=1);
 namespace ParagonIE\HaliteLegacy\V4;
 
-use ParagonIE\HaliteLegacy\Alerts\InvalidKey;
-use ParagonIE\HaliteLegacy\Asymmetric\{
+use ParagonIE\HaliteLegacy\V4\Alerts\InvalidKey;
+use ParagonIE\HaliteLegacy\V4\Asymmetric\{
     EncryptionPublicKey,
     EncryptionSecretKey
 };

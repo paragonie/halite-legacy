@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
-namespace ParagonIE\HaliteLegacy\Stream;
+namespace ParagonIE\HaliteLegacy\V4\Stream;
 
 use ParagonIE\ConstantTime\Binary;
-use ParagonIE\HaliteLegacy\Contract\StreamInterface;
-use ParagonIE\HaliteLegacy\Alerts\{
+use ParagonIE\HaliteLegacy\V4\Contract\StreamInterface;
+use ParagonIE\HaliteLegacy\V4\Alerts\{
     CannotPerformOperation,
     FileAccessDenied,
     InvalidType
@@ -20,7 +20,7 @@ use ParagonIE\HaliteLegacy\Alerts\{
  *
  * @ref http://php.net/manual/en/functions.returning-values.php#functions.returning-values.type-declaration
  *
- * @package ParagonIE\HaliteLegacy\Stream
+ * @package ParagonIE\HaliteLegacy\V4\Stream
  *
  * This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this

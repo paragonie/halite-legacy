@@ -1,8 +1,8 @@
 <?php
 declare(strict_types=1);
-namespace ParagonIE\HaliteLegacy\Contract;
+namespace ParagonIE\HaliteLegacy\V4\Contract;
 
-use ParagonIE\HaliteLegacy\Alerts\{
+use ParagonIE\HaliteLegacy\V4\Alerts\{
     CannotPerformOperation,
     FileAccessDenied
 };
@@ -17,7 +17,7 @@ use ParagonIE\HaliteLegacy\Alerts\{
  *
  * @ref http://php.net/manual/en/functions.returning-values.php#functions.returning-values.type-declaration
  *
- * @package ParagonIE\HaliteLegacy\Contract
+ * @package ParagonIE\HaliteLegacy\V4\Contract
  *
  * This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this

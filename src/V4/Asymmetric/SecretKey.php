@@ -1,13 +1,13 @@
 <?php
-namespace ParagonIE\HaliteLegacy\Asymmetric;
+namespace ParagonIE\HaliteLegacy\V4\Asymmetric;
 
-use ParagonIE\HaliteLegacy\Alerts\CannotPerformOperation;
-use ParagonIE\HaliteLegacy\Key;
+use ParagonIE\HaliteLegacy\V4\Alerts\CannotPerformOperation;
+use ParagonIE\HaliteLegacy\V4\Key;
 use ParagonIE\HiddenString\HiddenString;
 
 /**
  * Class SecretKey
- * @package ParagonIE\HaliteLegacy\Asymmetric
+ * @package ParagonIE\HaliteLegacy\V4\Asymmetric
  *
  * This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this

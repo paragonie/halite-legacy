@@ -6,7 +6,7 @@ use ParagonIE\ConstantTime\{
     Binary,
     Hex
 };
-use ParagonIE\HaliteLegacy\Alerts\{
+use ParagonIE\HaliteLegacy\V4\Alerts\{
     CannotPerformOperation,
     InvalidDigestLength,
     InvalidType
